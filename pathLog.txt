@@ -1,0 +1,1 @@
+/home/gaffarova/www/bitrix/modules/sale/install/components/bitrix/sale.personal.order/templates/.default/bitrix//home/gaffarova/www/bitrix/components/bitrix/sale.personal.order/templates/.default/bitrix/
