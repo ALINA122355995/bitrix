@@ -1,3 +1,6 @@
 <?
-$sSectionName="bayer";
+$sSectionName = "Кабинет покупателя";
+$arDirProperties = Array(
+
+);
 ?>

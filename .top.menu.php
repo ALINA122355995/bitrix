@@ -9,28 +9,28 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Объявления", 
-		"/obyavleniya/", 
+		"/obyavleniya/index.php", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"О сервисе", 
-		"company/", 
+		"/o-servise/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Кабинет продавца", 
-		"/sellers/index.php", 
+		"/sellers/", 
 		Array(), 
 		Array(), 
 		"CSite::InGroup(array(7))" 
 	),
 	Array(
 		"Кабинет покупателя", 
-		"/bayer/index.php", 
+		"/bayer/", 
 		Array(), 
 		Array(), 
 		"CSite::InGroup(array(6))" 

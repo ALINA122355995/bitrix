@@ -20,6 +20,13 @@ $aMenuLinks = Array(
 		Array(), 
 		Array(), 
 		"" 
+	),
+	Array(
+		"Контакты", 
+		"/o-servise/kontakty/", 
+		Array(), 
+		Array(), 
+		"" 
 	)
 );
 ?>

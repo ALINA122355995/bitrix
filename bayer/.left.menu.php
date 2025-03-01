@@ -1,8 +1,8 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Обратная связь", 
-		"/o-servise/kontakty/", 
+		"Избранное", 
+		"/bayer/izbrannoe/index.php", 
 		Array(), 
 		Array(), 
 		"" 

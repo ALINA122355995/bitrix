@@ -16,12 +16,44 @@ $arUrlRewrite=array (
     'PATH' => '/desktop_app/router.php',
     'SORT' => 100,
   ),
+  9 => 
+  array (
+    'CONDITION' => '#^/sellers/moi-obyavleniya/#CODE##',
+    'RULE' => '',
+    'ID' => 'bitrix:news',
+    'PATH' => '/sellers/moi-obyavleniya/index.php',
+    'SORT' => 100,
+  ),
+  6 => 
+  array (
+    'CONDITION' => '#^/obyavleniya//#CODE##',
+    'RULE' => '',
+    'ID' => 'bitrix:news',
+    'PATH' => '/obyavleniya/index.php',
+    'SORT' => 100,
+  ),
   4 => 
   array (
     'CONDITION' => '#^/online/(/?)([^/]*)#',
     'RULE' => '',
     'ID' => NULL,
     'PATH' => '/desktop_app/router.php',
+    'SORT' => 100,
+  ),
+  7 => 
+  array (
+    'CONDITION' => '#^/company//#CODE##',
+    'RULE' => '',
+    'ID' => 'bitrix:news',
+    'PATH' => '/company/vacancies.php',
+    'SORT' => 100,
+  ),
+  8 => 
+  array (
+    'CONDITION' => '#^/company/#CODE##',
+    'RULE' => '',
+    'ID' => 'bitrix:news',
+    'PATH' => '/company/novosti.php',
     'SORT' => 100,
   ),
   0 => 

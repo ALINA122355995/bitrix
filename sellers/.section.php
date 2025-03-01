@@ -1,3 +1,6 @@
 <?
-$sSectionName="sellers";
+$sSectionName = "Кабинет продавца";
+$arDirProperties = Array(
+
+);
 ?>

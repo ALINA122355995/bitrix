@@ -16,7 +16,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Контакты", 
-		"/company/contacts/index.php", 
+		"/o-servise/kontakty/index.php", 
 		Array(), 
 		Array(), 
 		"" 
