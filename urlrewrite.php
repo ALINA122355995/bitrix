@@ -16,7 +16,7 @@ $arUrlRewrite=array (
     'PATH' => '/desktop_app/router.php',
     'SORT' => 100,
   ),
-  9 => 
+  16 => 
   array (
     'CONDITION' => '#^/sellers/moi-obyavleniya/#CODE##',
     'RULE' => '',

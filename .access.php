@@ -1,4 +1,14 @@
 <?
+$PERM["/"]["*"]="R";
+$PERM["obyavleniya"]["8"]="X";
+$PERM["sellers"]["8"]="X";
+$PERM["bayer"]["8"]="X";
+$PERM["bitrix"]["2"]="D";
+$PERM["bitrix"]["3"]="D";
+$PERM["bitrix"]["4"]="D";
+$PERM["bitrix"]["8"]="D";
+$PERM["bitrix"]["6"]="D";
+$PERM["bitrix"]["7"]="D";
 $PERM["video"]["*"]="R";
 $PERM["online"]["*"]="R";
 $PERM["desktop_app"]["*"]="R";
@@ -9,5 +19,4 @@ $PERM["news"]["5"]="W";
 $PERM["contacts"]["5"]="W";
 $PERM["company"]["5"]="W";
 $PERM["index.php"]["5"]="W";
-$PERM["/"]["*"]="R";
 ?>
