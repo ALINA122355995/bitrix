@@ -1,5 +1,5 @@
 <?
-require($_SERVER["DOCUMENT_ROOT"]."/local/templates/home/header.php");
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Мебельная компания");
 ?>  
 <div class="slide-one-item home-slider owl-carousel">
@@ -393,4 +393,5 @@ $APPLICATION->SetTitle("Мебельная компания");
 
 </div>
 </div>
-</p><?require($_SERVER["DOCUMENT_ROOT"]."/local/templates/home/footer.php");?>
+</p>
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
