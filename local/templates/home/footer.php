@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-lg-4">
           <div class="mb-5">
-            
+		  <h3 class="footer-heading mb-4"><?=GetMessage('About HomeSpace')?></h3>
             <?$APPLICATION->IncludeComponent(
 	             "bitrix:main.include", 
 	             ".default", 
@@ -23,7 +23,7 @@
         <div class="col-lg-4 mb-5 mb-lg-0">
           <div class="row mb-5">
             <div class="col-md-12">
-              <h3 class="footer-heading mb-4">Navigations</h3>
+              <h3 class="footer-heading mb-4"><?=GetMessage('Navigations')?></h3>
             </div>
         <?$APPLICATION->IncludeComponent("bitrix:menu", "bottom_menu", Array(
 	      "ALLOW_MULTI_SELECT" => "N",	// Разрешить несколько активных пунктов одновременно
@@ -47,13 +47,16 @@
         
 
         <div class="col-lg-4 mb-5 mb-lg-0">
-          
-        <?$APPLICATION->IncludeComponent("bitrix:main.include", "follow_us", Array(
-	"AREA_FILE_SHOW" => "file",	// Показывать включаемую область
+		<h3 class="footer-heading mb-4"><?=GetMessage('Follow Us')?></h3>
+        <?$APPLICATION->IncludeComponent(
+	"bitrix:main.include", 
+	".default", 
+	array(
+		"AREA_FILE_SHOW" => "file",
 		"AREA_FILE_SUFFIX" => "inc",
-		"EDIT_TEMPLATE" => "",	// Шаблон области по умолчанию
+		"EDIT_TEMPLATE" => "",
 		"COMPONENT_TEMPLATE" => ".default",
-		"PATH" => "/include/follow_us.php",	// Путь к файлу области
+		"PATH" => "include/follow_us.php"
 	),
 	false
 );?>
@@ -61,12 +64,15 @@
 
       <div class="row pt-5 mt-5 text-center">
         <div class="col-md-12">
-        <?$APPLICATION->IncludeComponent("bitrix:main.include", "follow_us", Array(
-	"AREA_FILE_SHOW" => "file",	// Показывать включаемую область
+        <?$APPLICATION->IncludeComponent(
+	"bitrix:main.include", 
+	".default", 
+	array(
+		"AREA_FILE_SHOW" => "file",
 		"AREA_FILE_SUFFIX" => "inc",
-		"EDIT_TEMPLATE" => "",	// Шаблон области по умолчанию
+		"EDIT_TEMPLATE" => "",
 		"COMPONENT_TEMPLATE" => ".default",
-		"PATH" => "/include/date.php",	// Путь к файлу области
+		"PATH" => "/include/date.php"
 	),
 	false
 );?>

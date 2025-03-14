@@ -16,7 +16,7 @@ $arUrlRewrite=array (
     'PATH' => '/desktop_app/router.php',
     'SORT' => 100,
   ),
-  16 => 
+  23 => 
   array (
     'CONDITION' => '#^/sellers/moi-obyavleniya/#CODE##',
     'RULE' => '',
@@ -24,7 +24,7 @@ $arUrlRewrite=array (
     'PATH' => '/sellers/moi-obyavleniya/index.php',
     'SORT' => 100,
   ),
-  11 => 
+  17 => 
   array (
     'CONDITION' => '#^/o-servise/vakansii/#',
     'RULE' => '',
@@ -40,7 +40,7 @@ $arUrlRewrite=array (
     'PATH' => '/desktop_app/router.php',
     'SORT' => 100,
   ),
-  13 => 
+  18 => 
   array (
     'CONDITION' => '#^/o-servise/novosti/#',
     'RULE' => '',
@@ -64,7 +64,7 @@ $arUrlRewrite=array (
     'PATH' => '/company/novosti.php',
     'SORT' => 100,
   ),
-  15 => 
+  22 => 
   array (
     'CONDITION' => '#^/obyavleniya/#',
     'RULE' => '',

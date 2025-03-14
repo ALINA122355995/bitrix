@@ -11,12 +11,10 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
-// echo '<pre>';
-// print_r($arResult);
-// echo '</pre>';
 ?>
 
 <div class="row mb-5">
+<h2><?=GetMessage('New Properties for You')?></h2>
 <?foreach($arResult["ITEMS"] as $arItem):?>
 			
 			

@@ -2,6 +2,15 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Личный кабинет покупателя");
 ?><?$APPLICATION->IncludeComponent(
+	"bitrix:breadcrumb",
+	"bread_crumbs",
+	Array(
+		"PATH" => "",
+		"SITE_ID" => "s1",
+		"START_FROM" => "0"
+	)
+);?><br>
+ <?$APPLICATION->IncludeComponent(
 	"bitrix:main.profile",
 	"",
 	Array(
@@ -12,8 +21,7 @@ $APPLICATION->SetTitle("Личный кабинет покупателя");
 		"USER_PROPERTY_NAME" => ""
 	)
 );?><br>
-<br>
-<?$APPLICATION->IncludeComponent(
+ <?$APPLICATION->IncludeComponent(
 	"bitrix:subscribe.form",
 	"",
 	Array(
@@ -24,4 +32,4 @@ $APPLICATION->SetTitle("Личный кабинет покупателя");
 		"USE_PERSONALIZATION" => "Y"
 	)
 );?><br>
-<br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+ <br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

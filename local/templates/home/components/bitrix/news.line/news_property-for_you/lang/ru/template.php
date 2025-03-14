@@ -1,4 +1,5 @@
 <?
+$MESS["New Properties for You"] = "НОВЫЕ ОБЪЕКТЫ НЕДВИЖИМОСТИ ДЛЯ ВАС";
 $MESS["Area"] = "Площадь";
 $MESS["Beds"] = "Спальни";
 $MESS["Baths"] = "Санузел";

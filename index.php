@@ -1,7 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("");?><?$APPLICATION->SetTitle("Мебельная компания");
-?>
+?><br>
  <?$GLOBALS['arrFilter'] = array('PROPERTY_PRIORITY_DEAL_VALUE' => 'Да');?>
  <?$APPLICATION->IncludeComponent(
 	"bitrix:news.list", 
@@ -30,7 +30,7 @@ $APPLICATION->SetTitle("");?><?$APPLICATION->SetTitle("Мебельная ком
 			0 => "",
 			1 => "",
 		),
-		"FILTER_NAME" => "",
+		"FILTER_NAME" => "arrFilter",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
 		"IBLOCK_ID" => "5",
 		"IBLOCK_TYPE" => "Ads",
@@ -124,7 +124,6 @@ $APPLICATION->SetTitle("");?><?$APPLICATION->SetTitle("Мебельная ком
 		<div class="row mb-5">
 			<div class="col-12">
 				<div class="site-section-title">
-					<h2>New Properties for You</h2>
 					 <?$APPLICATION->IncludeComponent(
 	"bitrix:news.line", 
 	"news_property-for_you", 
@@ -171,13 +170,7 @@ $APPLICATION->SetTitle("");?><?$APPLICATION->SetTitle("Мебельная ком
 </div>
 <div class="site-section">
 	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-md-7 text-center mb-5">
-				<div class="site-section-title">
-					<h2>Our Services</h2>
-					</div>
-        </div>
-      </div>
+	
 	  				
 					<?$APPLICATION->IncludeComponent(
 	"bitrix:news.line", 
@@ -223,13 +216,7 @@ $APPLICATION->SetTitle("");?><?$APPLICATION->SetTitle("Мебельная ком
 		
 <div class="site-section bg-light">
 	<div class="container">
-		<div class="row justify-content-center mb-5">
-			<div class="col-md-7 text-center">
-				<div class="site-section-title">
-					<h2>Our Blog</h2>
-				</div>
-        </div>
-      </div>
+		
 	  
 					 <?$APPLICATION->IncludeComponent(
 	"bitrix:news.line", 

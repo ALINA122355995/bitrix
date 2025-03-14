@@ -3,7 +3,7 @@
 IncludeTemplateLangFile(__FILE__);
 ?>
 
-<?$APPLICATION->ShowHead();?>
+<head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
   <title><?$APPLICATION->ShowTitle()?></title>

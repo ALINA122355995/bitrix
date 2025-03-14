@@ -11,12 +11,18 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
-// echo '<pre>';
-// print_r($arResult);
-// echo '</pre>';
-?>
 
+?>
+<div class="row justify-content-center mb-5">
+			<div class="col-md-7 text-center">
+				<div class="site-section-title">
+        <h2><?=GetMessage('Our Blog')?></h2>
+				</div>
+        </div>
+      </div>
 <div class="row">
+
+
 <?foreach($arResult["ITEMS"] as $arItem):?>
 	<?
 		$this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));

@@ -2,11 +2,19 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Избранное");
 ?><?$APPLICATION->IncludeComponent(
-	"bitrix:news.list",
-	".default",
+	"bitrix:breadcrumb",
+	"bread_crumbs",
 	Array(
+		"PATH" => "",
+		"SITE_ID" => "s1",
+		"START_FROM" => "0"
+	)
+);?><?$APPLICATION->IncludeComponent(
+	"bitrix:news.list", 
+	".default", 
+	array(
 		"ACTIVE_DATE_FORMAT" => "d.m.Y",
-		"ADD_SECTIONS_CHAIN" => "Y",
+		"ADD_SECTIONS_CHAIN" => "N",
 		"AJAX_MODE" => "N",
 		"AJAX_OPTION_ADDITIONAL" => "",
 		"AJAX_OPTION_HISTORY" => "N",
@@ -17,20 +25,22 @@ $APPLICATION->SetTitle("Избранное");
 		"CACHE_TIME" => "36000000",
 		"CACHE_TYPE" => "A",
 		"CHECK_DATES" => "Y",
-		"COMPONENT_TEMPLATE" => ".default",
-		"DETAIL_URL" => "/bayer/izbrannoe/#CODE#",
+		"DETAIL_URL" => "/obyavleniya/#ELEMENT_CODE#/",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
 		"DISPLAY_DATE" => "Y",
 		"DISPLAY_NAME" => "Y",
 		"DISPLAY_PICTURE" => "Y",
 		"DISPLAY_PREVIEW_TEXT" => "Y",
 		"DISPLAY_TOP_PAGER" => "N",
-		"FIELD_CODE" => array(0=>"",1=>"",),
+		"FIELD_CODE" => array(
+			0 => "",
+			1 => "",
+		),
 		"FILTER_NAME" => "",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
 		"IBLOCK_ID" => "5",
 		"IBLOCK_TYPE" => "Ads",
-		"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
+		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
 		"INCLUDE_SUBSECTIONS" => "Y",
 		"MESSAGE_404" => "",
 		"NEWS_COUNT" => "20",
@@ -44,7 +54,10 @@ $APPLICATION->SetTitle("Избранное");
 		"PARENT_SECTION" => "",
 		"PARENT_SECTION_CODE" => "",
 		"PREVIEW_TRUNCATE_LEN" => "",
-		"PROPERTY_CODE" => array(0=>"",1=>"",),
+		"PROPERTY_CODE" => array(
+			0 => "",
+			1 => "",
+		),
 		"SET_BROWSER_TITLE" => "Y",
 		"SET_LAST_MODIFIED" => "N",
 		"SET_META_DESCRIPTION" => "Y",
@@ -56,8 +69,10 @@ $APPLICATION->SetTitle("Избранное");
 		"SORT_BY2" => "SORT",
 		"SORT_ORDER1" => "DESC",
 		"SORT_ORDER2" => "ASC",
-		"STRICT_SECTION_CHECK" => "N"
-	)
+		"STRICT_SECTION_CHECK" => "N",
+		"COMPONENT_TEMPLATE" => ".default"
+	),
+	false
 );?><?$APPLICATION->IncludeComponent(
 	"bitrix:subscribe.index",
 	"",
