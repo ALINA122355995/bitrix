@@ -56,7 +56,7 @@
 		"AREA_FILE_SUFFIX" => "inc",
 		"EDIT_TEMPLATE" => "",
 		"COMPONENT_TEMPLATE" => ".default",
-		"PATH" => "include/follow_us.php"
+		"PATH" => "/include/follow_us.php"
 	),
 	false
 );?>

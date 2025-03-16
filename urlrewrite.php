@@ -64,7 +64,7 @@ $arUrlRewrite=array (
     'PATH' => '/company/novosti.php',
     'SORT' => 100,
   ),
-  22 => 
+  24 => 
   array (
     'CONDITION' => '#^/obyavleniya/#',
     'RULE' => '',
