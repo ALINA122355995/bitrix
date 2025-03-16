@@ -22,7 +22,6 @@ $this->setFrameMode(true);
         <div class="row align-items-center justify-content-center text-center">
 		<?foreach($arResult["FIELDS"] as $arFields):?>
           <div class="col-md-10">
-            
             <span class="d-inline-block text-white px-3 mb-3 property-offer-type rounded"><?=GetMessage('Property Details of')?></span>
             <h1 class="mb-2"><?=$arResult["NAME"]?></h1>
             <p class="mb-5"><strong class="h2 text-success font-weight-bold"><?=$arResult["DISPLAY_PROPERTIES"]["PRICE"]["VALUE"]?></strong></p>
@@ -36,10 +35,20 @@ $this->setFrameMode(true);
         <div class="row">
           <div class="col-lg-8" style="margin-top: -150px;">
             <div class="mb-5">
+            <?if($arResult['DISPLAY_PROPERTIES']['GALLERY_IMAGES']['VALUE']):?>
               <div class="slide-one-item home-slider owl-carousel">
-                <div><img src="<?=$arResult["PREVIEW_PICTURE"]["SRC"]?>" alt="Image" class="img-fluid"></div>
-               
+                <?if(count($arResult['DISPLAY_PROPERTIES']['GALLERY_IMAGES']['VALUE'])==1):?>
+                  <div> <img src="<?=$arResult['DISPLAY_PROPERTIES']['GALLERY_IMAGES']['FILE_VALUE']['SRC']?>"></div>
+                
+                  <?else:?>
+                    <?foreach($arResult['DISPLAY_PROPERTIES']['GALLERY_IMAGES']['FILE_VALUE'] as $arItem):?>   
+                <div><img src="<?=$arItem['SRC']?>" alt="Image" class="img-fluid"></div>
+                <?endforeach;?>
+                <?endif?> 
+             
+                
               </div>
+              <?endif?> 
             </div>
             <div class="bg-white">
               <div class="row mb-5">
@@ -65,7 +74,7 @@ $this->setFrameMode(true);
                   </li>
                 </ul>
                 </div>
-              </div>
+              </div>  
               <div class="row mb-5">
                 <div class="col-md-6 col-lg-4 text-left border-bottom border-top py-3">
                   <span class="d-inline-block text-black mb-0 caption-text"><?=GetMessage('Home Type')?></span>
@@ -80,19 +89,42 @@ $this->setFrameMode(true);
                   <strong class="d-block">$520</strong>
                 </div>
               </div>
-              <h2 class="h4 text-black"><?=GetMessage('More Info')?></h2>
+              <h2 class="h4 text-black"> <?=GetMessage('More Info')?></h2>
               <?=$arResult["DETAIL_TEXT"]?>
-              <div class="row mt-5">
+                        
+              
+              <?if($arResult['DISPLAY_PROPERTIES']['GALLERY_IMAGES']['VALUE']):?>
+                <div class="row mt-5">
                 <div class="col-12">
-                  <h2 class="h4 text-black mb-3"><?=$arResult["DISPLAY_PROPERTIES"]["GALLERY_IMAGES"]["NAME"]?></h2>
+               <h2 class="h4 text-black mb-3"><?=$arResult["DISPLAY_PROPERTIES"]["GALLERY_IMAGES"]["NAME"]?></h2>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-                  <a href="<?=$arResult["DISPLAY_PROPERTIES"]["GALLERY_IMAGES"]["FILE_VALUE"]["SRC"]?>" class="image-popup gal-item"><img src="<?=$arResult["DISPLAY_PROPERTIES"]["GALLERY_IMAGES"]["FILE_VALUE"]["SRC"]?>" alt="<?=$arResult["DISPLAY_PROPERTIES"]["GALLERY_IMAGES"]["FILE_VALUE"]["SRC"]?>" class="img-fluid"></a>
+               <?if(count($arResult['DISPLAY_PROPERTIES']['GALLERY_IMAGES']['VALUE'])==1):?>
+               <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <a href="<?=$arResult['DISPLAY_PROPERTIES']['GALLERY_IMAGES']['FILE_VALUE']['SRC']?>" class="image-popup gal-item"><img src="<?=$arResult['DISPLAY_PROPERTIES']['GALLERY_IMAGES']['FILE_VALUE']['SRC']?>" alt="Image" class="img-fluid"></a>
+</div>
+               <?else:?>
+                    <?foreach($arResult['DISPLAY_PROPERTIES']['GALLERY_IMAGES']['FILE_VALUE'] as $arItem):?>   
+                      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                  <a href="<?=$arItem['SRC']?>" class="image-popup gal-item"><img src="<?=$arItem['SRC']?>" alt="Image" class="img-fluid"></a>
+                </div>
+             
+                <?endforeach;?>
+                <?endif?> 
+            
+                </div>
+                <?endif?>
+                <?=$arResult["DISPLAY_PROPERTIES"]["EXTERNAL_LINKS"]["NAME"]?><br/>
+                <?=$arResult['DISPLAY_PROPERTIES']['EXTERNAL_LINKS']['DISPLAY_VALUE']?> 
                 </div>
                </div>
-            </div>
-          </div>
-          <div class="col-lg-4 pl-md-5">
+              
+       
+               
+               
+                           
+     
+      
+            <div class="col-lg-4 pl-md-5">
 
             <div class="bg-white widget border rounded">
 
@@ -118,7 +150,7 @@ $this->setFrameMode(true);
 
             <div class="bg-white widget border rounded">
               <h3 class="h4 text-black widget-title mb-3"><?=GetMessage('Paragraph')?></h3>
-              <?=$arItem["PREVIEW_TEXT"]?>
+              <?=$arResult["PREVIEW_TEXT"]?>
             </div>
 
           </div>
@@ -128,3 +160,4 @@ $this->setFrameMode(true);
     </div>
 
 
+    
