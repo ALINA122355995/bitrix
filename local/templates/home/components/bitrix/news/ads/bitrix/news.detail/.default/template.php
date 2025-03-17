@@ -20,7 +20,7 @@ $this->setFrameMode(true);
  <div class="site-blocks-cover overlay" style="background-image: url(/local/templates/home/images/hero_bg_2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
-		<?foreach($arResult["FIELDS"] as $arFields):?>
+		
           <div class="col-md-10">
             <span class="d-inline-block text-white px-3 mb-3 property-offer-type rounded"><?=GetMessage('Property Details of')?></span>
             <h1 class="mb-2"><?=$arResult["NAME"]?></h1>
@@ -154,7 +154,7 @@ $this->setFrameMode(true);
             </div>
 
           </div>
-          <?endforeach;?>
+        
         </div>
       </div>
     </div>
