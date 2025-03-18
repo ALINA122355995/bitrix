@@ -22,5 +22,10 @@ $arTemplateParameters = array(
 		"TYPE" => "CHECKBOX",
 		"DEFAULT" => "Y",
 	),
+	"DISPLAY_SET_TITLE" => Array(
+		"NAME" => GetMessage("T_IBLOCK_DESC_NEWS_TITLE"),
+		"TYPE" => "TEXT",
+		"DEFAULT" => "Y",
+	),
 );
 ?>

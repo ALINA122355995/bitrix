@@ -29,7 +29,16 @@ $arTemplateParameters = array(
 		"VALUE" => "Y",
 		"DEFAULT" =>"N",
 		"REFRESH"=> "Y",
-	),	
+
+	),
+	"USE_SHARE" => Array(
+    "NAME" => GetMessage("T_IBLOCK_DESC_NEWS_USE_SHARE"),
+    "TYPE" => "CHECKBOX",
+    "MULTIPLE" => "N",
+    "VALUE" => "Y",
+    "DEFAULT" =>"N",
+    "REFRESH"=> "Y",
+  ),	
 );
 
 if ($arCurrentValues["USE_SHARE"] == "Y")
@@ -78,6 +87,11 @@ if ($arCurrentValues["USE_SHARE"] == "Y")
 		"TYPE" => "STRING",
 		"DEFAULT" => "",
 	);
+	$arTemplateParameter["DISPLAY_SET_TITLE"] = array(
+		"NAME" => GetMessage("T_IBLOCK_DESC_NEWS_TITLE"),
+		"TYPE" => "TEXT",
+		"DEFAULT" => "Y",
+	  );
 }
 
 ?>

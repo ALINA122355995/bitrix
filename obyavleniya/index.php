@@ -225,6 +225,7 @@ $APPLICATION->SetTitle("Объявления");
 		"USE_RSS" => "N",
 		"USE_SEARCH" => "N",
 		"USE_SHARE" => "N",
+		"DISPLAY_SET_TITLE" => "Объявления",
 		"SEF_URL_TEMPLATES" => array(
 			"news" => "",
 			"section" => "",
