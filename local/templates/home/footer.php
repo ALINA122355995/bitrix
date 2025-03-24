@@ -83,7 +83,7 @@
   </footer>
 
   </div>
-
+  </div>
  <?php
 use Bitrix\Main\Page\Asset;
 

@@ -2,7 +2,8 @@
 <?
 IncludeTemplateLangFile(__FILE__);
 ?>
-
+<!DOCTYPE html>
+<html lang="<?= LANGUAGE_ID ?>">
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
@@ -29,9 +30,12 @@ Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/fl-bigmug-line.css");
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/aos.css");
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/style.css");
 ?>
+
+
+<div><?$APPLICATION->ShowHead();?><div>
 </head>
 <body>
-<div><?$APPLICATION->ShowHead();?><div>
+
 <div id="panel"><?$APPLICATION->ShowPanel();?></div>
   <div class="site-loader"></div>
   <div class="site-wrap">
@@ -94,6 +98,9 @@ Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/style.css");
 	),
 	false
 );?>
+ <br>
+<a href="/avtorization.php" class="mr-3"><span> ВОЙТИ</span></a>
+
           </div>
         </div>
       </div>
@@ -118,10 +125,7 @@ Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/style.css");
              );?>
 <span class="text-danger">.</span></strong></a></h1>
 </div>
-
-
-         
-                  <?$APPLICATION->IncludeComponent(
+<?$APPLICATION->IncludeComponent(
 	"bitrix:menu", 
 	"top_menu", 
 	array(
@@ -132,10 +136,10 @@ Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/style.css");
 		"MENU_CACHE_GET_VARS" => array(
 		),
 		"MENU_CACHE_TIME" => "3600",
-		"MENU_CACHE_TYPE" => "A",
+		"MENU_CACHE_TYPE" => "N",
 		"MENU_CACHE_USE_GROUPS" => "Y",
 		"ROOT_MENU_TYPE" => "top",
-		"USE_EXT" => "N",
+		"USE_EXT" => "Y",
 		"COMPONENT_TEMPLATE" => "top_menu"
 	),
 	false
@@ -143,6 +147,17 @@ Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/style.css");
   </div>
       </div>
     </div>
-  </div>             
-           
-                 
+  </div>      
+         
+  <?$current_link = $APPLICATION->GetCurPage();
+if ($current_link !== "/"):
+  $APPLICATION->IncludeComponent(
+	"bitrix:breadcrumb",
+	"bread_crumbs",
+	Array(
+		"PATH" => "",
+		"SITE_ID" => "s1",
+		"START_FROM" => "0"
+	)
+);?>
+  <?endif?>               

@@ -1,21 +1,11 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Мои объявления");
-?><?$APPLICATION->IncludeComponent(
-	"bitrix:breadcrumb",
-	"bread_crumbs",
-	Array(
-		"PATH" => "",
-		"SITE_ID" => "s1",
-		"START_FROM" => "0"
-	)
-	
-);?>
-<?$GLOBALS['arrFilter'] = array('CREATED_BY' => $GLOBALS['USER']->GetID());?>
+?><?$GLOBALS['arrFilter'] = array('CREATED_BY' => $GLOBALS['USER']->GetID());?>
 <?$APPLICATION->IncludeComponent(
-	"bitrix:news", 
-	"ads", 
-	array(
+	"bitrix:news",
+	"ads",
+	Array(
 		"ADD_ELEMENT_CHAIN" => "N",
 		"ADD_SECTIONS_CHAIN" => "N",
 		"AJAX_MODE" => "N",
@@ -33,66 +23,29 @@ $APPLICATION->SetTitle("Мои объявления");
 		"DETAIL_ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"DETAIL_DISPLAY_BOTTOM_PAGER" => "Y",
 		"DETAIL_DISPLAY_TOP_PAGER" => "N",
-		"DETAIL_FIELD_CODE" => array(
-			0 => "ID",
-			1 => "CODE",
-			2 => "XML_ID",
-			3 => "NAME",
-			4 => "PREVIEW_TEXT",
-			5 => "PREVIEW_PICTURE",
-			6 => "DETAIL_TEXT",
-			7 => "DETAIL_PICTURE",
-			8 => "",
-		),
+		"DETAIL_FIELD_CODE" => array(0=>"ID",1=>"CODE",2=>"XML_ID",3=>"NAME",4=>"PREVIEW_TEXT",5=>"PREVIEW_PICTURE",6=>"DETAIL_TEXT",7=>"DETAIL_PICTURE",8=>"",),
 		"DETAIL_PAGER_SHOW_ALL" => "Y",
 		"DETAIL_PAGER_TEMPLATE" => "",
 		"DETAIL_PAGER_TITLE" => "Страница",
-		"DETAIL_PROPERTY_CODE" => array(
-			0 => "ADDRESS",
-			1 => "CODE",
-			2 => "BATHROOMS",
-			3 => "BEDS",
-			4 => "FLOORS",
-			5 => "GARAGE",
-			6 => "TOTAL_AREA",
-			7 => "PRIORITY_DEAL",
-			8 => "EXTERNAL_LINKS",
-			9 => "PRICE",
-			10 => "",
-		),
+		"DETAIL_PROPERTY_CODE" => array(0=>"ADDRESS",1=>"CODE",2=>"BATHROOMS",3=>"BEDS",4=>"FLOORS",5=>"GARAGE",6=>"TOTAL_AREA",7=>"PRIORITY_DEAL",8=>"EXTERNAL_LINKS",9=>"PRICE",10=>"",),
 		"DETAIL_SET_CANONICAL_URL" => "N",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
+		"DISPLAY_DATE" => "Y",
 		"DISPLAY_NAME" => "Y",
+		"DISPLAY_PICTURE" => "Y",
+		"DISPLAY_PREVIEW_TEXT" => "Y",
+		"DISPLAY_SET_TITLE" => "Мои объявления",
 		"DISPLAY_TOP_PAGER" => "N",
+		"FILTER_FIELD_CODE" => array(0=>"",1=>"",),
+		"FILTER_NAME" => "arrFilter",
+		"FILTER_PROPERTY_CODE" => array(0=>"ADDRESS",1=>"CODE",2=>"BEDS",3=>"FLOORS",4=>"GARAGE",5=>"PRIORITY_DEAL",6=>"PRICE",7=>"",),
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
 		"IBLOCK_ID" => "5",
 		"IBLOCK_TYPE" => "Ads",
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
 		"LIST_ACTIVE_DATE_FORMAT" => "d.m.Y",
-		"LIST_FIELD_CODE" => array(
-			0 => "ID",
-			1 => "CODE",
-			2 => "XML_ID",
-			3 => "NAME",
-			4 => "TAGS",
-			5 => "PREVIEW_TEXT",
-			6 => "PREVIEW_PICTURE",
-			7 => "DETAIL_TEXT",
-			8 => "DETAIL_PICTURE",
-			9 => "",
-		),
-		"LIST_PROPERTY_CODE" => array(
-			0 => "ADDRESS",
-			1 => "CODE",
-			2 => "BATHROOMS",
-			3 => "BEDS",
-			4 => "FLOORS",
-			5 => "GARAGE",
-			6 => "TOTAL_AREA",
-			7 => "PRIORITY_DEAL",
-			8 => "EXTERNAL_LINKS",
-			9 => "",
-		),
+		"LIST_FIELD_CODE" => array(0=>"ID",1=>"CODE",2=>"XML_ID",3=>"NAME",4=>"TAGS",5=>"PREVIEW_TEXT",6=>"PREVIEW_PICTURE",7=>"DETAIL_TEXT",8=>"DETAIL_PICTURE",9=>"",),
+		"LIST_PROPERTY_CODE" => array(0=>"ADDRESS",1=>"CODE",2=>"BATHROOMS",3=>"BEDS",4=>"FLOORS",5=>"GARAGE",6=>"TOTAL_AREA",7=>"PRIORITY_DEAL",8=>"EXTERNAL_LINKS",9=>"",),
 		"MESSAGE_404" => "",
 		"META_DESCRIPTION" => "-",
 		"META_KEYWORDS" => "-",
@@ -107,6 +60,7 @@ $APPLICATION->SetTitle("Мои объявления");
 		"PREVIEW_TRUNCATE_LEN" => "",
 		"SEF_FOLDER" => "/obyavleniya/",
 		"SEF_MODE" => "Y",
+		"SEF_URL_TEMPLATES" => array("news"=>"","section"=>"","detail"=>"#ELEMENT_CODE#/",),
 		"SET_LAST_MODIFIED" => "N",
 		"SET_STATUS_404" => "N",
 		"SET_TITLE" => "Y",
@@ -123,31 +77,6 @@ $APPLICATION->SetTitle("Мои объявления");
 		"USE_REVIEW" => "N",
 		"USE_RSS" => "N",
 		"USE_SEARCH" => "N",
-		"DISPLAY_DATE" => "Y",
-		"DISPLAY_PICTURE" => "Y",
-		"DISPLAY_PREVIEW_TEXT" => "Y",
-		"USE_SHARE" => "N",
-		"DISPLAY_SET_TITLE" => "Мои объявления",
-		"FILTER_NAME" => "arrFilter",
-		"FILTER_FIELD_CODE" => array(
-			0 => "",
-			1 => "",
-		),
-		"FILTER_PROPERTY_CODE" => array(
-			0 => "ADDRESS",
-			1 => "CODE",
-			2 => "BEDS",
-			3 => "FLOORS",
-			4 => "GARAGE",
-			5 => "PRIORITY_DEAL",
-			6 => "PRICE",
-			7 => "",
-		),
-		"SEF_URL_TEMPLATES" => array(
-			"news" => "",
-			"section" => "",
-			"detail" => "#ELEMENT_CODE#/",
-		)
-	),
-	false
+		"USE_SHARE" => "N"
+	)
 );?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

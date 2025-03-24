@@ -1,8 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("");?><?$APPLICATION->SetTitle("Мебельная компания");
-?><br>
- <?$GLOBALS['arrFilter'] = array('PROPERTY_PRIORITY_DEAL_VALUE' => 'Да');?>
+$APPLICATION->SetTitle("Недвижимость");?>
+ <?$GLOBALS['arrFilter'] = array('PROPERTY_PRIORITY_DEAL_VALUE' => 'Да');?> 
  <?$APPLICATION->IncludeComponent(
 	"bitrix:news.list", 
 	"slider", 
@@ -19,6 +18,7 @@ $APPLICATION->SetTitle("");?><?$APPLICATION->SetTitle("Мебельная ком
 		"CACHE_TIME" => "36000000",
 		"CACHE_TYPE" => "A",
 		"CHECK_DATES" => "Y",
+		"COMPONENT_TEMPLATE" => "slider",
 		"DETAIL_URL" => "/obyavleniya/#ELEMENT_CODE#/",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
 		"DISPLAY_DATE" => "Y",
@@ -49,8 +49,11 @@ $APPLICATION->SetTitle("");?><?$APPLICATION->SetTitle("Мебельная ком
 		"PARENT_SECTION_CODE" => "",
 		"PREVIEW_TRUNCATE_LEN" => "",
 		"PROPERTY_CODE" => array(
-			0 => "PRIORITY_DEAL",
-			1 => "",
+			0 => "ADDRESS",
+			1 => "PRIORITY_DEAL",
+			2 => "EXTERNAL_LINKS",
+			3 => "PRICE",
+			4 => "",
 		),
 		"SET_BROWSER_TITLE" => "Y",
 		"SET_LAST_MODIFIED" => "N",
@@ -63,8 +66,7 @@ $APPLICATION->SetTitle("");?><?$APPLICATION->SetTitle("Мебельная ком
 		"SORT_BY2" => "SORT",
 		"SORT_ORDER1" => "DESC",
 		"SORT_ORDER2" => "ASC",
-		"STRICT_SECTION_CHECK" => "N",
-		"COMPONENT_TEMPLATE" => "slider"
+		"STRICT_SECTION_CHECK" => "N"
 	),
 	false
 );?>
@@ -120,11 +122,8 @@ $APPLICATION->SetTitle("");?><?$APPLICATION->SetTitle("Мебельная ком
 	</div>
 </div>
 <div class="site-section site-section-sm bg-light">
-	<div class="container">
-		<div class="row mb-5">
-			<div class="col-12">
-				<div class="site-section-title">
-					 <?$APPLICATION->IncludeComponent(
+	<div class="container">	
+	<?$APPLICATION->IncludeComponent(
 	"bitrix:news.line", 
 	"news_property-for_you", 
 	array(
@@ -160,100 +159,55 @@ $APPLICATION->SetTitle("");?><?$APPLICATION->SetTitle("Мебельная ком
 	),
 	false
 );?>
-			
-
-					</div>
-				</div>
- </a>
-			</div>
-		</div>
+				
 	</div>
 </div>
 <div class="site-section">
 	<div class="container">
-	
-	  				
-					<?$APPLICATION->IncludeComponent(
-	"bitrix:news.line", 
-	"Our_services", 
-	array(
+		 <?$APPLICATION->IncludeComponent(
+	"bitrix:news.line",
+	"Our_services",
+	Array(
 		"ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"CACHE_GROUPS" => "Y",
 		"CACHE_TIME" => "7776000",
 		"CACHE_TYPE" => "A",
+		"COMPONENT_TEMPLATE" => "Our_services",
 		"DETAIL_URL" => "",
-		"FIELD_CODE" => array(
-			0 => "CODE",
-			1 => "XML_ID",
-			2 => "NAME",
-			3 => "TAGS",
-			4 => "PREVIEW_TEXT",
-			5 => "PREVIEW_PICTURE",
-			6 => "DETAIL_TEXT",
-			7 => "DETAIL_PICTURE",
-			8 => "IBLOCK_CODE",
-			9 => "IBLOCK_NAME",
-			10 => "IBLOCK_EXTERNAL_ID",
-			11 => "PROPERTY_URL_resourses",
-			12 => "",
-		),
-		"IBLOCKS" => array(
-			0 => "6",
-		),
+		"FIELD_CODE" => array(0=>"CODE",1=>"XML_ID",2=>"NAME",3=>"TAGS",4=>"PREVIEW_TEXT",5=>"PREVIEW_PICTURE",6=>"DETAIL_TEXT",7=>"DETAIL_PICTURE",8=>"IBLOCK_CODE",9=>"IBLOCK_NAME",10=>"IBLOCK_EXTERNAL_ID",11=>"PROPERTY_URL_resourses",12=>"",),
+		"IBLOCKS" => array(0=>"6",),
 		"IBLOCK_TYPE" => "Services",
 		"NEWS_COUNT" => "6",
 		"SORT_BY1" => "ACTIVE_FROM",
 		"SORT_BY2" => "SORT",
 		"SORT_ORDER1" => "DESC",
-		"SORT_ORDER2" => "ASC",
-		"COMPONENT_TEMPLATE" => "Our_services"
-	),
-	false
-);?><br>
+		"SORT_ORDER2" => "ASC"
+	)
+);?>
+	</div>
 </div>
-				
-			</div>
-		</div>
-		
 <div class="site-section bg-light">
 	<div class="container">
-		
-	  
-					 <?$APPLICATION->IncludeComponent(
-	"bitrix:news.line", 
-	"Our_blog", 
-	array(
+		 <?$APPLICATION->IncludeComponent(
+	"bitrix:news.line",
+	"Our_blog",
+	Array(
 		"ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"CACHE_GROUPS" => "Y",
 		"CACHE_TIME" => "604800",
 		"CACHE_TYPE" => "A",
+		"COMPONENT_TEMPLATE" => "Our_blog",
 		"DETAIL_URL" => "/news/#ELEMENT_CODE#/",
-		"FIELD_CODE" => array(
-			0 => "NAME",
-			1 => "PREVIEW_TEXT",
-			2 => "PREVIEW_PICTURE",
-			3 => "DETAIL_TEXT",
-			4 => "DETAIL_PICTURE",
-			5 => "IBLOCK_CODE",
-			6 => "IBLOCK_NAME",
-			7 => "DATE_CREATE",
-			8 => "",
-		),
-		"IBLOCKS" => array(
-			0 => "4",
-		),
+		"FIELD_CODE" => array(0=>"NAME",1=>"PREVIEW_TEXT",2=>"PREVIEW_PICTURE",3=>"DETAIL_TEXT",4=>"DETAIL_PICTURE",5=>"IBLOCK_CODE",6=>"IBLOCK_NAME",7=>"DATE_CREATE",8=>"",),
+		"IBLOCKS" => array(0=>"4",),
 		"IBLOCK_TYPE" => "news",
 		"NEWS_COUNT" => "3",
 		"SORT_BY1" => "ACTIVE_FROM",
 		"SORT_BY2" => "SORT",
 		"SORT_ORDER1" => "DESC",
-		"SORT_ORDER2" => "ASC",
-		"COMPONENT_TEMPLATE" => "Our_blog"
-	),
-	false
-);?><br>
-				</div>
-			</div>
-		</div>
-		
-  <br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+		"SORT_ORDER2" => "ASC"
+	)
+);?>
+	</div>
+</div>
+ <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

@@ -6,13 +6,11 @@
 
 global $APPLICATION;
 
-//delayed function must return a string
+
 if(empty($arResult))
   return "";
 
-$strReturn = '';
-
-//we can't use $APPLICATION->SetAdditionalCSS() here because we are inside the buffered function GetNavChain()
+$strReturn = ''; 
 $css = $APPLICATION->GetCSSArray();
 if(!is_array($css) || !in_array("/bitrix/css/main/font-awesome.css", $css))
 {

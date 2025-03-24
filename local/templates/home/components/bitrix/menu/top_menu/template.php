@@ -1,4 +1,7 @@
-<?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
+<?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+$this->setFrameMode(true);
+?>
+
 <?if (!empty($arResult)):?>
 <div class="col-4 col-md-4 col-lg-8" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
      <nav class="site-navigation text-right text-md-right" role="navigation">

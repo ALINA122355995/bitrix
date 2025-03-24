@@ -12,9 +12,7 @@
 /** @var CBitrixComponent $component */
 
 $this->setFrameMode(true);
-// echo '<pre>';
-// print_r($arResult);
-// echo '</pre>';
+
 ?>
 
  <div class="site-blocks-cover overlay" style="background-image: url(/local/templates/home/images/hero_bg_2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
@@ -62,9 +60,15 @@ $this->setFrameMode(true);
                     <span class="property-specs-number"><?=$arResult["DISPLAY_PROPERTIES"]["BEDS"]["VALUE"]?><sup>+</sup></span>
                     
                   </li>
+                  
                   <li>
                     <span class="property-specs"><?=$arResult["DISPLAY_PROPERTIES"]["BATHROOMS"]["NAME"]?></span>
                     <span class="property-specs-number"><?=$arResult["DISPLAY_PROPERTIES"]["BATHROOMS"]["VALUE"]?></span>
+                    
+                  </li>
+                  <li>
+                    <span class="property-specs"><?=$arResult["DISPLAY_PROPERTIES"]["FLOORS"]["NAME"]?></span>
+                    <span class="property-specs-number"><?=$arResult["DISPLAY_PROPERTIES"]["FLOORS"]["VALUE"]?><sup>+</sup></span>
                     
                   </li>
                   <li>
@@ -76,17 +80,22 @@ $this->setFrameMode(true);
                 </div>
               </div>  
               <div class="row mb-5">
-                <div class="col-md-6 col-lg-4 text-left border-bottom border-top py-3">
+                <div class="col-md-6 col-lg text-left border-bottom border-top py-3">
                   <span class="d-inline-block text-black mb-0 caption-text"><?=GetMessage('Home Type')?></span>
                   <strong class="d-block"><?=GetMessage('Condo')?></strong>
                 </div>
-                <div class="col-md-6 col-lg-4 text-left border-bottom border-top py-3">
-                  <span class="d-inline-block text-black mb-0 caption-text"><?=GetMessage('Year Built')?></span>
-                  <strong class="d-block">2018</strong>
+                              
+                <div class="col-md-6 col-lg text-left border-bottom border-top py-3">
+                  <span class="d-inline-block text-black mb-0 caption-text"><?=$arResult["DISPLAY_PROPERTIES"]["YEAR_OF_CONSTRUCTIONS"]["NAME"]?></span>
+                  <strong class="d-block"><?=$arResult["DISPLAY_PROPERTIES"]["YEAR_OF_CONSTRUCTIONS"]["VALUE"]?></strong>
                 </div>
-                <div class="col-md-6 col-lg-4 text-left border-bottom border-top py-3">
-                  <span class="d-inline-block text-black mb-0 caption-text"><?=GetMessage('Price/Sqft')?></span>
-                  <strong class="d-block">$520</strong>
+                <div class="col-md-6 col-lg text-left border-bottom border-top py-3">
+                  <span class="d-inline-block text-black mb-0 caption-text"><?=$arResult["DISPLAY_PROPERTIES"]["PRICE_SQFT"]["NAME"]?></span>
+                  <strong class="d-block"><?=GetMessage('$')?><?=$arResult["DISPLAY_PROPERTIES"]["PRICE_SQFT"]["VALUE"]?></strong>
+                </div>
+                <div class="col-md-6 col-lg text-left border-bottom border-top py-3">
+                  <span class="d-inline-block text-black mb-0 caption-text"><?=GetMessage('Date of update')?></span>
+                  <strong class="d-block"><?=$arResult["TIMESTAMP_X"]?></strong>
                 </div>
               </div>
               <h2 class="h4 text-black"> <?=GetMessage('More Info')?></h2>
@@ -114,7 +123,29 @@ $this->setFrameMode(true);
                 </div>
                 <?endif?>
                 <?=$arResult["DISPLAY_PROPERTIES"]["EXTERNAL_LINKS"]["NAME"]?><br/>
-                <?=$arResult['DISPLAY_PROPERTIES']['EXTERNAL_LINKS']['DISPLAY_VALUE']?> 
+                <?=$arResult['DISPLAY_PROPERTIES']['EXTERNAL_LINKS']['DISPLAY_VALUE']?><br/>
+                <?if($arResult['DISPLAY_PROPERTIES']['ADDITIONAL_FILES']['VALUE']):?>
+                <div class="row mt-5">
+                <div class="col-12">
+               <h2 class="h4 text-black mb-3"><?=$arResult["DISPLAY_PROPERTIES"]["ADDITIONAL_FILES"]["NAME"]?></h2>
+                </div>
+                <?if(count($arResult['DISPLAY_PROPERTIES']['ADDITIONAL_FILES']['VALUE'])==1):?>
+               <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <a href="<?=$arResult['DISPLAY_PROPERTIES']['ADDITIONAL_FILES']['FILE_VALUE']['SRC']?>" class="image-popup gal-item"><img src="<?=$arResult['DISPLAY_PROPERTIES']['ADDITIONAL_FILES']['FILE_VALUE']['SRC']?>" alt="Image" class="img-fluid"></a>
+</div>
+               <?else:?>
+                    <?foreach($arResult['DISPLAY_PROPERTIES']['ADDITIONAL_FILES']['FILE_VALUE'] as $arItem):?>   
+                      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                  <a href="<?=$arItem['SRC']?>" class="image-popup gal-item"><img src="<?=$arItem['SRC']?>" alt="Image" class="img-fluid"></a>
+                </div>
+             
+                <?endforeach;?>
+                <?endif?> 
+            
+                </div>
+                <?endif?>
+            
+                
                 </div>
                </div>
               

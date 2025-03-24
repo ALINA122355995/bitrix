@@ -2,14 +2,6 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Вакансии");
 ?><?$APPLICATION->IncludeComponent(
-	"bitrix:breadcrumb",
-	"bread_crumbs",
-	Array(
-		"PATH" => "",
-		"SITE_ID" => "s1",
-		"START_FROM" => "0"
-	)
-);?><?$APPLICATION->IncludeComponent(
 	"bitrix:news",
 	".default",
 	Array(

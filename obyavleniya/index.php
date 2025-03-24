@@ -1,15 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Объявления");
-?><?$APPLICATION->IncludeComponent(
-	"bitrix:breadcrumb",
-	"bread_crumbs",
-	Array(
-		"PATH" => "",
-		"SITE_ID" => "s1",
-		"START_FROM" => "0"
-	)
-);?> <br>
+?> <br>
  <br>
 <div class="pt-5">
 	<div class="container">
@@ -137,17 +129,19 @@ $APPLICATION->SetTitle("Объявления");
 		"DETAIL_PAGER_TITLE" => "Страница",
 		"DETAIL_PROPERTY_CODE" => array(
 			0 => "ADDRESS",
-			1 => "CODE",
-			2 => "BATHROOMS",
-			3 => "BEDS",
-			4 => "FLOORS",
-			5 => "GARAGE",
-			6 => "TOTAL_AREA",
-			7 => "PRIORITY_DEAL",
-			8 => "EXTERNAL_LINKS",
-			9 => "PRICE",
-			10 => "GALLERY_IMAGES",
-			11 => "",
+			1 => "YEAR_OF_CONSTRUCTIONS",
+			2 => "CODE",
+			3 => "BATHROOMS",
+			4 => "BEDS",
+			5 => "FLOORS",
+			6 => "GARAGE",
+			7 => "TOTAL_AREA",
+			8 => "PRIORITY_DEAL",
+			9 => "EXTERNAL_LINKS",
+			10 => "PRICE",
+			11 => "PRICE_SQFT",
+			12 => "GALLERY_IMAGES",
+			13 => "ADDITIONAL_FILES",
 		),
 		"DETAIL_SET_CANONICAL_URL" => "N",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
@@ -167,17 +161,20 @@ $APPLICATION->SetTitle("Объявления");
 		),
 		"LIST_PROPERTY_CODE" => array(
 			0 => "ADDRESS",
-			1 => "CODE",
-			2 => "BATHROOMS",
-			3 => "BEDS",
-			4 => "FLOORS",
-			5 => "GARAGE",
-			6 => "TOTAL_AREA",
-			7 => "PRIORITY_DEAL",
-			8 => "EXTERNAL_LINKS",
-			9 => "PRICE",
-			10 => "GALLERY_IMAGES",
-			11 => "",
+			1 => "YEAR_OF_CONSTRUCTIONS",
+			2 => "CODE",
+			3 => "BATHROOMS",
+			4 => "BEDS",
+			5 => "FLOORS",
+			6 => "GARAGE",
+			7 => "TOTAL_AREA",
+			8 => "PRIORITY_DEAL",
+			9 => "EXTERNAL_LINKS",
+			10 => "PRICE",
+			11 => "PRICE_SQFT",
+			12 => "GALLERY_IMAGES",
+			13 => "ADDITIONAL_FILES",
+			14 => "",
 		),
 		"LIST_USE_SHARE" => "",
 		"MESSAGE_404" => "",
