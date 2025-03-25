@@ -176,6 +176,7 @@ class AgentsList extends CBitrixComponent implements Controllerable, Errorable
         $category = 'mcart_agent';
         $name = 'options_agents_star';
          $this->arResult['STAR_AGENTS'] = CUserOptions::GetOption($category, $name);
+         
         /*
          * Данного метода нет в документации, код метода и его параметры можно найти в ядре (/bitrix/modules/main/) или в гугле
          * $category - это категория настройки, можете придумать любую, например mcart_agent
@@ -365,7 +366,7 @@ class AgentsList extends CBitrixComponent implements Controllerable, Errorable
 
      public function clickStarAction($agentID)
 {
-    $result = ['action' => 'error']; // По умолчанию ошибка
+    $result = ['action' => 'error'];
     if (!$agentID) {
         return $result;
     }

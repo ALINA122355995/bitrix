@@ -16,9 +16,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 
-echo '<pre>';
-print_r($arResult); // для разработки в конечном коде убрать
-echo '</pre>';
+
 
 /*
  * Для постраничной навигации использовать компонент bitrix:main.pagenavigation
@@ -31,7 +29,7 @@ echo '</pre>';
         <div class="row mb-5">
           <div class="col-12">
             <div class="site-section-title">
-              <h2>Агенты по Недвижимости</h2>
+              <h2><?=GetMessage("AGENTS_HOME")?></h2>
             </div>
           </div>
         </div>
@@ -75,8 +73,7 @@ echo '</pre>';
                 </a>
             </div>
             <?endforeach;?>
-     </div>
-    </div>
+     
     <?
 $APPLICATION->IncludeComponent(
 	"bitrix:main.pagenavigation", 
@@ -90,6 +87,7 @@ $APPLICATION->IncludeComponent(
 	false
 );
 ?>
-
+</div>
+</div>
 
 

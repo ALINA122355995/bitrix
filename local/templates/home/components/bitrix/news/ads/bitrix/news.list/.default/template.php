@@ -11,6 +11,9 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
+echo '<pre>';
+print_r($arResult); // для разработки в конечном коде убрать
+echo '</pre>';
 ?>
 
 <div class="site-section site-section-sm bg-light">
