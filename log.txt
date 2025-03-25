@@ -1,0 +1,699 @@
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-24 21:25:15
+array (
+  0 => '157',
+  1 => 
+  array (
+  ),
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:157
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-24 21:25:15
+array (
+  0 => '158',
+  1 => '',
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:159
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-24 21:26:16
+array (
+  0 => '153',
+  1 => 'Estateagents',
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:153
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-24 21:26:16
+array (
+  0 => '157',
+  1 => 
+  array (
+  ),
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:157
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-24 21:26:16
+array (
+  0 => '158',
+  1 => '',
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:159
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-24 23:13:32
+array (
+  0 => '153',
+  1 => 'Estateagents',
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:153
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-24 23:13:32
+array (
+  0 => '157',
+  1 => 
+  array (
+  ),
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:157
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-24 23:13:32
+array (
+  0 => '158',
+  1 => '',
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:159
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-24 23:13:32
+array (
+  0 => '153',
+  1 => 'Estateagents',
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:153
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-24 23:13:32
+array (
+  0 => '157',
+  1 => 
+  array (
+  ),
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:157
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-24 23:13:32
+array (
+  0 => '158',
+  1 => '',
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:159
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 08:31:00
+array (
+  0 => '153',
+  1 => 'Estateagents',
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:153
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 08:31:00
+array (
+  0 => '157',
+  1 => 
+  array (
+  ),
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:157
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 08:31:00
+array (
+  0 => '158',
+  1 => '',
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:159
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 08:33:34
+array (
+  0 => '153',
+  1 => 'Estateagents',
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:153
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 08:33:34
+array (
+  0 => '157',
+  1 => 
+  array (
+  ),
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:157
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 08:33:34
+array (
+  0 => '158',
+  1 => '',
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:159
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 11:11:37
+array (
+  0 => '153',
+  1 => 'Estateagents',
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:153
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 11:11:37
+array (
+  0 => '157',
+  1 => 
+  array (
+  ),
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:157
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 11:11:37
+array (
+  0 => '158',
+  1 => '',
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:159
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 11:11:45
+array (
+  0 => '153',
+  1 => 'Estateagents',
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:153
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 11:11:45
+array (
+  0 => '157',
+  1 => 
+  array (
+  ),
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:157
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 11:11:45
+array (
+  0 => '158',
+  1 => '',
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:159
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 11:24:12
+array (
+  0 => '153',
+  1 => 'Estateagents',
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:153
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 11:24:12
+array (
+  0 => '157',
+  1 => 
+  array (
+  ),
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:157
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 11:24:12
+array (
+  0 => '158',
+  1 => '',
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:159
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 11:27:30
+array (
+  0 => '153',
+  1 => 'Estateagents',
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:153
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 11:27:30
+array (
+  0 => '157',
+  1 => 
+  array (
+  ),
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:157
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 11:27:30
+array (
+  0 => '158',
+  1 => '',
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:159
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 11:32:06
+array (
+  0 => '153',
+  1 => 'Estateagents',
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:153
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 11:32:06
+array (
+  0 => '157',
+  1 => 
+  array (
+  ),
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:157
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 11:32:06
+array (
+  0 => '158',
+  1 => '',
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:159
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 11:32:25
+array (
+  0 => '153',
+  1 => 'Estateagents',
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:153
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 11:32:25
+array (
+  0 => '157',
+  1 => 
+  array (
+  ),
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:157
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 11:32:25
+array (
+  0 => '158',
+  1 => '',
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:159
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:14
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 11:34:08
+array (
+  0 => '153',
+  1 => 'estate_agents',
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:153
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:8
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 11:34:08
+array (
+  0 => '157',
+  1 => 
+  array (
+    'ID' => '14',
+    'NAME' => 'Estateagents',
+    'TABLE_NAME' => 'estate_agents',
+  ),
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:157
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:8
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 11:34:08
+array (
+  0 => '158',
+  1 => '',
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:159
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:8
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 11:38:24
+array (
+  0 => '153',
+  1 => 'estate_agents',
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:153
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:8
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 11:38:24
+array (
+  0 => '157',
+  1 => 
+  array (
+    'ID' => '14',
+    'NAME' => 'Estateagents',
+    'TABLE_NAME' => 'estate_agents',
+  ),
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:158
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:8
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 11:38:24
+array (
+  0 => '158',
+  1 => '',
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:161
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:8
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 11:45:19
+array (
+  0 => '153',
+  1 => 'estate_agents',
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:154
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:8
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 11:45:19
+array (
+  0 => '157',
+  1 => 
+  array (
+    'ID' => '14',
+    'NAME' => 'Estateagents',
+    'TABLE_NAME' => 'estate_agents',
+  ),
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:159
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:8
+----------
+Host: gaffarova.study.mcart.ru
+Date: 2025-03-25 11:45:19
+array (
+  0 => '158',
+  1 => '',
+)
+#0: AddMessage2Log
+	/home/gaffarova/www/local/components/mcart_new/agents.list/class.php:162
+#1: AgentsList->executeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/component.php:668
+#2: CBitrixComponent->includeComponent
+	/home/gaffarova/www/bitrix/modules/main/classes/general/main.php:1188
+#3: CAllMain->IncludeComponent
+	/home/gaffarova/www/o-servise/agenty.php:8
+----------

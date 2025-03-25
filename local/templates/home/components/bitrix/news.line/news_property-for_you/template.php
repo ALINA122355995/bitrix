@@ -11,7 +11,9 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
-
+echo '<pre>';
+print_r($arResult); // для разработки в конечном коде убрать
+echo '</pre>';
 ?>
 
 <div class="row mb-5">
@@ -26,10 +28,11 @@ $this->setFrameMode(true);
 	<?
 	
 	$this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
-	$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($params["IBLOCK_ID"], "ELEMENT_EDIT"), CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
+	$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($params["IBLOCK_ID"], "ELEMENT_EDIT"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
 	?>
 	  
 		<div class="col-md-6 col-lg-4 mb-4">
+		<div id="<?=$this->GetEditAreaId($arItem['ID']);?>">
  <a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="prop-entry d-block"> <figure> <img alt="Image" src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>" class="img-fluid"> </figure>
 				<div class="prop-text">
 					<div class="inner">
@@ -54,8 +57,10 @@ $this->setFrameMode(true);
 						</div>
 					</div>
 				</div>
-				</div>				
+				</div>	
+							
  </a>
+ </div>
  <?endforeach;?>
 			</div>
 		

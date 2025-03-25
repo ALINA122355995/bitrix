@@ -123,6 +123,7 @@ $APPLICATION->SetTitle("Недвижимость");?>
 </div>
 <div class="site-section site-section-sm bg-light">
 	<div class="container">	
+		
 	<?$APPLICATION->IncludeComponent(
 	"bitrix:news.line", 
 	"news_property-for_you", 

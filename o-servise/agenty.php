@@ -3,12 +3,15 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Агенты");
 ?><?$APPLICATION->IncludeComponent(
 	"mcart_new:agents.list", 
-	".default", 
+	"agents", 
 	array(
 		"CACHE_TIME" => "36000000",
 		"CACHE_TYPE" => "A",
-		"HLBLOCK_TNAME" => "Агенты по недвижимост",
-		"PAGE_SIZE" => "10",
-		"COMPONENT_TEMPLATE" => ".default"
+		"HLBLOCK_TNAME" => "estate_agents",
+		"PAGE_SIZE" => "2",
+		"COMPONENT_TEMPLATE" => "agents"
 	),
-);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+	false
+);?>
+
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
