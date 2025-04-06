@@ -365,31 +365,31 @@ class AgentsList extends CBitrixComponent implements Controllerable, Errorable
      */
 
      public function clickStarAction($agentID)
-{
-    $result = ['action' => 'error'];
-    if (!$agentID) {
-        return $result;
-    }
-
-    $category = 'mcart_agent';
-    $name = 'options_agents_star';
-    $value = CUserOptions::GetOption($category, $name, []);
-
-    if (!is_array($value)) {
-        $value = [];
-    }
-
-    if (in_array($agentID, $value)) {
-        $value = array_diff($value, [$agentID]); // Удаляем, если есть
-    } else {
-        $value[] = $agentID; // Добавляем, если нет
-    }
-
-    CUserOptions::SetOption($category, $name, $value);
-    $result['action'] = 'success';
-
-    return $result;
-}
+     {
+         $result = ['action' => 'error'];
+         if (!$agentID) {
+             return $result;
+         }
+     
+         $category = 'mcart_agent';
+         $name = 'options_agents_star';
+         $value = CUserOptions::GetOption($category, $name, []);
+     
+         if (!is_array($value)) {
+             $value = [];
+         }
+     
+         if (in_array($agentID, $value)) {
+             $value = array_diff($value, [$agentID]); 
+             $result['action'] = 'remove'; 
+         } else {
+             $value[] = $agentID; 
+             $result['action'] = 'success'; 
+         }
+     
+         CUserOptions::SetOption($category, $name, $value);
+         return $result;
+     }
    
       
         /*

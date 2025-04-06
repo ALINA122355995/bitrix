@@ -8,9 +8,9 @@ $APPLICATION->SetTitle("Авторизация");
 	"bitrix:system.auth.form", 
 	"auth_form", 
 	array(
-		"FORGOT_PASSWORD_URL" => "/local/templates/home/user/fargot.php",
-		"PROFILE_URL" => "/local/templates/home/user/profile.php",
-		"REGISTER_URL" => "/local/templates/home/user/registration.php",
+		"FORGOT_PASSWORD_URL" => "/user/fargot.php",
+		"PROFILE_URL" => "/user/profile.php",
+		"REGISTER_URL" => "/user/registration.php",
 		"SHOW_ERRORS" => "N",
 		"COMPONENT_TEMPLATE" => "auth_form"
 	),

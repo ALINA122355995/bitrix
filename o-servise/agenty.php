@@ -8,7 +8,7 @@ $APPLICATION->SetTitle("Агенты");
 		"CACHE_TIME" => "36000000",
 		"CACHE_TYPE" => "A",
 		"HLBLOCK_TNAME" => "estate_agents",
-		"PAGE_SIZE" => "2",
+		"PAGE_SIZE" => "5",
 		"COMPONENT_TEMPLATE" => "agents"
 	),
 	false
