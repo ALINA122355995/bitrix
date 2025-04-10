@@ -1,33 +1,9 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Статьи");
-?><main class="main">
-<?$APPLICATION->IncludeComponent("bitrix:breadcrumb", "top_nav", Array(
-	"PATH" => "",	// Путь, для которого будет построена навигационная цепочка (по умолчанию, текущий путь)
-		"SITE_ID" => "s2",	// Cайт (устанавливается в случае многосайтовой версии, когда DOCUMENT_ROOT у сайтов разный)
-		"START_FROM" => "0",	// Номер пункта, начиная с которого будет построена навигационная цепочка
-	),
-	false
-);?><br>
- <br>
- <br>
- <!-- Page Title --><br>
- <br>
- <br>
-<div class="page-title dark-background">
-	<div class="container position-relative">
-		<h1>Статьи</h1>
-		<p>
-			 Погрузитесь в инновации и передовые идеи с нашими статьями.
-		</p>
- <nav class="breadcrumbs">
-		<ol>
-			<li><a href="#">Главная</a></li>
-			<li class="current">Статьи</li>
-		</ol>
- </nav>
-	</div>
-</div>
+?><main class="main"> 
+ <!-- Page Title -->
+
  <!-- End Page Title --> <!-- Blog Posts Section --> <section id="blog-posts" class="blog-posts section">
 <div class="container">
 	<div class="row gy-4">

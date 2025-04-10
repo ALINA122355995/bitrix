@@ -1,4 +1,13 @@
 <?
+$PERM["statistic_na"]["2"]="D";
+$PERM["statistic_na"]["3"]="D";
+$PERM["statistic_na"]["4"]="D";
+$PERM["statistic_na"]["10"]="R";
+$PERM["statistic_na"]["8"]="D";
+$PERM["statistic_na"]["6"]="D";
+$PERM["statistic_na"]["7"]="D";
+$PERM["statistic_na"]["9"]="D";
+$PERM["statistic_na"]["5"]="D";
 $PERM["about"]["9"]="W";
 $PERM["index.php"]["9"]="D";
 $PERM["articles"]["9"]="D";

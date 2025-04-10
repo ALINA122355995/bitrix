@@ -11,8 +11,8 @@ IncludeTemplateLangFile(__FILE__);?>
 	<meta name="keywords" content="">
 
 	<!-- Favicons -->
-	<link href="local/templates/exam1_type1_dev/assets/assets/img/favicon.png" rel="icon">
-	<link href="local/templates/exam1_type1_dev/assets/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+	<link href="/local/templates/exam1_type1_dev/assets/img/favicon.png" rel="icon">
+	<link href="/local/templates/exam1_type1_dev/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
     <?php
 use Bitrix\Main\Page\Asset;
 $asset = Asset::getInstance();

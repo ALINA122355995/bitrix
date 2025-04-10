@@ -16,28 +16,35 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Услуги", 
-		"/s2/services/index.php", 
+		"/s2/uslugi/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Портфолио", 
-		"/s2/portfolio/index.php", 
+		"/s2/portfolio/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Статьи", 
-		"/s2/articles/index.php", 
+		"/s2/articles/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Контакты", 
-		"/s2/contacts/index.php", 
+		"/s2/contacts1/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Статистика", 
+		"/s2/statistic_na/", 
 		Array(), 
 		Array(), 
 		"" 

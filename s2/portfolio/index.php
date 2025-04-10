@@ -1,27 +1,15 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Портфолио");
-?><main class="main">
-<!-- Page Title -->
-<div class="page-title dark-background">
-	<div class="container position-relative">
-		<h1>Порфолио</h1>
-		<p>
-			 Ознакомьтесь с нашими успешными проектами и реализованными решениями.
-		</p>
- <nav class="breadcrumbs">
-		<ol>
-			<li><a href="/s2/index.php">Главная</a></li>
-			<li class="current">Портфолио</li>
-		</ol>
- </nav>
-	</div>
-</div>
- <!-- End Page Title --> </main>
+?><!-- Page Title --> <!-- End Page Title --> 
+	
+<section class="portfolio-sections section">
+			<div class="container">
+	
 <?$APPLICATION->IncludeComponent(
-	"bitrix:catalog",
-	"portfolio",
-	Array(
+	"bitrix:catalog", 
+	"Partfoliooo", 
+	array(
 		"ACTION_VARIABLE" => "action",
 		"ADD_ELEMENT_CHAIN" => "N",
 		"ADD_PICT_PROP" => "-",
@@ -38,13 +26,16 @@ $APPLICATION->SetTitle("Портфолио");
 		"CACHE_TIME" => "36000000",
 		"CACHE_TYPE" => "A",
 		"COMPATIBLE_MODE" => "N",
-		"COMPONENT_TEMPLATE" => "portfolio",
+		"COMPONENT_TEMPLATE" => "Partfoliooo",
 		"DETAIL_ADD_DETAIL_TO_SLIDER" => "N",
 		"DETAIL_BACKGROUND_IMAGE" => "-",
 		"DETAIL_BRAND_USE" => "N",
-		"DETAIL_BROWSER_TITLE" => "NAME",
+		"DETAIL_BROWSER_TITLE" => "-",
 		"DETAIL_CHECK_SECTION_ID_VARIABLE" => "N",
-		"DETAIL_DETAIL_PICTURE_MODE" => array(0=>"POPUP",1=>"MAGNIFIER",),
+		"DETAIL_DETAIL_PICTURE_MODE" => array(
+			0 => "POPUP",
+			1 => "MAGNIFIER",
+		),
 		"DETAIL_DISPLAY_NAME" => "Y",
 		"DETAIL_DISPLAY_PREVIEW_TEXT_MODE" => "E",
 		"DETAIL_IMAGE_RESOLUTION" => "16by9",
@@ -72,7 +63,8 @@ $APPLICATION->SetTitle("Портфолио");
 		"IBLOCK_TYPE" => "content",
 		"INCLUDE_SUBSECTIONS" => "Y",
 		"INSTANT_RELOAD" => "N",
-		"LABEL_PROP" => array(),
+		"LABEL_PROP" => array(
+		),
 		"LAZY_LOAD" => "N",
 		"LINE_ELEMENT_COUNT" => "3",
 		"LINK_ELEMENTS_URL" => "link.php?PARENT_ELEMENT_ID=#ELEMENT_ID#",
@@ -107,7 +99,8 @@ $APPLICATION->SetTitle("Портфолио");
 		"PAGER_TITLE" => "Товары",
 		"PAGE_ELEMENT_COUNT" => "30",
 		"PARTIAL_PRODUCT_PROPERTIES" => "N",
-		"PRICE_CODE" => array(),
+		"PRICE_CODE" => array(
+		),
 		"PRICE_VAT_INCLUDE" => "Y",
 		"PRICE_VAT_SHOW_VALUE" => "N",
 		"PRODUCT_ID_VARIABLE" => "id",
@@ -123,11 +116,9 @@ $APPLICATION->SetTitle("Портфолио");
 		"SECTIONS_VIEW_MODE" => "LIST",
 		"SECTION_BACKGROUND_IMAGE" => "-",
 		"SECTION_COUNT_ELEMENTS" => "Y",
-		"SECTION_ID_VARIABLE" => "SECTION_CODE",
+		"SECTION_ID_VARIABLE" => "SECTION_ID",
 		"SECTION_TOP_DEPTH" => "2",
-		"SEF_FOLDER" => "/s2/portfolio/",
 		"SEF_MODE" => "Y",
-		"SEF_URL_TEMPLATES" => array("sections"=>"","section"=>"#SECTION_ID#/","element"=>"#SECTION_ID#/#ELEMENT_ID#/","compare"=>"compare.php?action=#ACTION_ID#","smart_filter"=>"#SECTION_ID#/filter/#SMART_FILTER_PATH#/apply/",),
 		"SET_LAST_MODIFIED" => "N",
 		"SET_STATUS_404" => "N",
 		"SET_TITLE" => "Y",
@@ -145,8 +136,7 @@ $APPLICATION->SetTitle("Портфолио");
 		"TOP_ELEMENT_SORT_FIELD2" => "id",
 		"TOP_ELEMENT_SORT_ORDER" => "asc",
 		"TOP_ELEMENT_SORT_ORDER2" => "desc",
-		"TOP_ENLARGE_PRODUCT" => "PROP",
-		"TOP_ENLARGE_PROP" => "BUSINESS_SECTOR",
+		"TOP_ENLARGE_PRODUCT" => "STRICT",
 		"TOP_LINE_ELEMENT_COUNT" => "3",
 		"TOP_PRODUCT_BLOCKS_ORDER" => "price,props,sku,quantityLimit,quantity,buttons",
 		"TOP_PRODUCT_ROW_VARIANTS" => "[{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false}]",
@@ -156,58 +146,31 @@ $APPLICATION->SetTitle("Портфолио");
 		"TOP_VIEW_MODE" => "SECTION",
 		"USER_CONSENT" => "N",
 		"USER_CONSENT_ID" => "0",
-		"USER_CONSENT_IS_CHECKED" => "N",
+		"USER_CONSENT_IS_CHECKED" => "Y",
 		"USER_CONSENT_IS_LOADED" => "N",
 		"USE_COMPARE" => "N",
 		"USE_ELEMENT_COUNTER" => "Y",
 		"USE_ENHANCED_ECOMMERCE" => "N",
 		"USE_FILTER" => "N",
-		"USE_MAIN_ELEMENT_SECTION" => "Y",
+		"USE_MAIN_ELEMENT_SECTION" => "N",
 		"USE_PRICE_COUNT" => "N",
 		"USE_PRODUCT_QUANTITY" => "N",
 		"USE_STORE" => "N",
-		"VARIABLE_ALIASES" => array("compare"=>array("ACTION_ID"=>"action",),)
-	)
-);?><?$APPLICATION->IncludeComponent(
-	"bitrix:search.page", 
-	".default", 
-	array(
-		"AJAX_MODE" => "Y",
-		"AJAX_OPTION_ADDITIONAL" => "",
-		"AJAX_OPTION_HISTORY" => "N",
-		"AJAX_OPTION_JUMP" => "N",
-		"AJAX_OPTION_STYLE" => "Y",
-		"CACHE_TIME" => "3600",
-		"CACHE_TYPE" => "A",
-		"CHECK_DATES" => "N",
-		"DEFAULT_SORT" => "rank",
-		"DISPLAY_BOTTOM_PAGER" => "Y",
-		"DISPLAY_TOP_PAGER" => "Y",
-		"FILTER_NAME" => "",
-		"NO_WORD_LOGIC" => "N",
-		"PAGER_SHOW_ALWAYS" => "Y",
-		"PAGER_TEMPLATE" => "",
-		"PAGER_TITLE" => "Результаты поиска",
-		"PAGE_RESULT_COUNT" => "50",
-		"PATH_TO_USER_PROFILE" => "",
-		"RATING_TYPE" => "",
-		"RESTART" => "N",
-		"SHOW_RATING" => "",
-		"SHOW_WHEN" => "N",
-		"SHOW_WHERE" => "N",
-		"USE_LANGUAGE_GUESS" => "Y",
-		"USE_SUGGEST" => "N",
-		"USE_TITLE_RANK" => "N",
-		"arrFILTER" => array(
-			0 => "iblock_content",
+		"SEF_FOLDER" => "/s2/portfolio/",
+		"SEF_URL_TEMPLATES" => array(
+			"sections" => "",
+			"section" => "#SECTION_ID#/",
+			"element" => "#SECTION_ID#/#ELEMENT_ID#/",
+			"compare" => "compare.php?action=#ACTION_CODE#",
+			"smart_filter" => "#SECTION_ID#/filter/#SMART_FILTER_PATH#/apply/",
 		),
-		"arrFILTER_iblock_content" => array(
-			0 => "12",
-		),
-		"arrWHERE" => array(
-			0 => "iblock_content",
-		),
-		"COMPONENT_TEMPLATE" => ".default"
+		"VARIABLE_ALIASES" => array(
+			"compare" => array(
+				"ACTION_CODE" => "action",
+			),
+		)
 	),
 	false
-);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+);?>
+</div>
+</section><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

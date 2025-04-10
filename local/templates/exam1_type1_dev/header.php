@@ -14,6 +14,7 @@ IncludeTemplateLangFile(__FILE__);?>
 	<link href="/local/templates/exam1_type1_dev/assets/img/favicon.png" rel="icon">
 	<link href="/local/templates/exam1_type1_dev/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
     <?php
+	
 use Bitrix\Main\Page\Asset;
 $asset = Asset::getInstance();
 	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/vendor/bootstrap/css/bootstrap.min.css");
@@ -32,7 +33,7 @@ $asset = Asset::getInstance();
 <header id="header" class="header d-flex align-items-center">
 		<div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 		<a href="#" class="logo d-flex align-items-center">
-				<h1 class="sitename">Компания</h1>
+		<h1 class="sitename"><?=GetMessage('Company')?></h1>
 			</a>
 		<?$APPLICATION->IncludeComponent(
 	"bitrix:menu", 
@@ -53,7 +54,7 @@ $asset = Asset::getInstance();
 	),
 	false
 );?>
-			
+		
 
 	
 
@@ -61,3 +62,17 @@ $asset = Asset::getInstance();
 	</header>
 
 	
+	<?php
+if (!CSite::InDir('/s2/index.php')): ?>
+    <?$APPLICATION->IncludeComponent(
+	"bitrix:breadcrumb",
+	"top_nav",
+	Array(
+		"COMPONENT_TEMPLATE" => "top_nav",
+		"PATH" => "",
+		"SITE_ID" => "s2",
+		"START_FROM" => "0"
+	)
+);?>
+<?php endif; ?>
+

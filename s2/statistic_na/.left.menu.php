@@ -1,0 +1,39 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Дашборд", 
+		"/s2/statistic_na/dashbord/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Основные", 
+		"/s2/statistic_na/main/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Дополнительные", 
+		"/s2/statistic_na/extra/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Профиль", 
+		"/s2/statistic_na/profile/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Главная", 
+		"/s2/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

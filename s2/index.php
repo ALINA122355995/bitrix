@@ -36,4 +36,4 @@ $APPLICATION->SetTitle("Мебельная компания");
 	),
 	false
 );?>
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+</main><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

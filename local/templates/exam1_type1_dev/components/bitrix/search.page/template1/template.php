@@ -10,9 +10,9 @@
 /** @var string $templateFolder */
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
+
 ?>
-<div class="search-page">
-<form action="" method="get">
+<div class="search-form">
 <?if($arParams["USE_SUGGEST"] === "Y"):
 	if(mb_strlen($arResult["REQUEST"]["~QUERY"]) && is_object($arResult["NAV_RESULT"]))
 	{
@@ -34,7 +34,8 @@
 		$component, array("HIDE_ICONS" => "Y")
 	);?>
 <?else:?>
-	<input type="text" name="q" value="<?=$arResult["REQUEST"]["QUERY"]?>" size="40" />
+	
+	<input class="input-seach" type="text" name="q" value="<?=$arResult["REQUEST"]["QUERY"]?>" size="40" />
 <?endif;?>
 <?if($arParams["SHOW_WHERE"]):?>
 	&nbsp;<select name="where">
@@ -44,7 +45,9 @@
 	<?endforeach?>
 	</select>
 <?endif;?>
-	&nbsp;<input type="submit" value="<?=GetMessage("SEARCH_GO")?>" />
+
+	&nbsp;<input class="button-seach" name="s" type="submit" value="<?=GetMessage("SEARCH_GO")?>" />
+	
 	<input type="hidden" name="how" value="<?echo $arResult["REQUEST"]["HOW"]=="d"? "d": "r"?>" />
 <?if($arParams["SHOW_WHEN"]):?>
 	<script>
@@ -96,7 +99,11 @@
 		);?>
 	</div>
 <?endif?>
-</form><br />
+</div>
+
+
+
+
 
 <?if(isset($arResult["REQUEST"]["ORIGINAL_QUERY"])):
 	?>
@@ -184,4 +191,3 @@ endif;?>
 <?else:?>
 	<?ShowNote(GetMessage("SEARCH_NOTHING_TO_FOUND"));?>
 <?endif;?>
-</div>
